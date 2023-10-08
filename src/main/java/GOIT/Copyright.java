@@ -1,4 +1,4 @@
-package SomeTask;
+package GOIT;
 
 final class Copyright {
 

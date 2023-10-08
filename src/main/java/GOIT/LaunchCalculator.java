@@ -1,8 +1,8 @@
-package SomeTask;
+package GOIT;
 
 public class LaunchCalculator {
 
-    public int calculateTotalPrice(Spaceport spaceport, int passengerCount) {
+    public int calculateTotalPrice(OneSpaceport spaceport, int passengerCount) {
         return spaceport.calculateTotalPrice(passengerCount);
     }
 
@@ -21,12 +21,12 @@ public class LaunchCalculator {
 
 }
 
-abstract class Spaceport {
+abstract class OneSpaceport {
     public abstract int calculateTotalPrice(int passengerCount);
 }
 
 
-class JupiterStar extends Spaceport{
+class JupiterStar extends OneSpaceport{
 
     @Override
     public int calculateTotalPrice(int passengerCount) {
@@ -37,7 +37,7 @@ class JupiterStar extends Spaceport{
     }
 }
 
-class MercuryBeat extends Spaceport{
+class MercuryBeat extends OneSpaceport{
 
     @Override
     public int calculateTotalPrice(int passengerCount) {
@@ -47,7 +47,7 @@ class MercuryBeat extends Spaceport{
     }
 }
 
-class SunHeaven extends Spaceport{
+class SunHeaven extends OneSpaceport{
 
     @Override
     public int calculateTotalPrice(int passengerCount) {

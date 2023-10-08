@@ -1,4 +1,4 @@
-package SomeTask;
+package GOIT;
 
 abstract class Passenger {
     public abstract String getType();

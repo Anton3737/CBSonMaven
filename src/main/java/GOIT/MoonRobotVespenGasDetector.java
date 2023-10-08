@@ -1,4 +1,4 @@
-package SomeTask;
+package GOIT;
 
 import java.util.*;
 

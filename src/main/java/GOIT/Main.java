@@ -1,4 +1,4 @@
-package SomeTask;
+package GOIT;
 
 class A {
     public void method() {

@@ -1,4 +1,4 @@
-package SomeTask;
+package GOIT;
 
 public class SpaceRocketLauncher {
 
