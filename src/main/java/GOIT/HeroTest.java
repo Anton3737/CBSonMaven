@@ -12,19 +12,28 @@ public class HeroTest {
     }
 }
 
-class Hero{
+class Hero {
 
     private String name;
     private int hp;
 
-    public Hero() {
-        name = "Paratrooper";
-        hp = 100;
-    }
 
     public Hero(String name, int hp) {
         this.name = name;
-        this.hp = hp;
+        setHp(hp);
+    }
+
+    public Hero() {
+        this("Paratrooper", 100);
+    }
+
+
+    private void setHP(int hp){
+        if (hp >= 0 && hp <= 250){
+            this.hp = hp;
+        }else
+            this.hp = Math.min(0,Math.max(hp,200));
+            this.hp = Math.max(0, Math.min(hp, 200));
     }
 
     public String getName() {
