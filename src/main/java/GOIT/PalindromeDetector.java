@@ -6,13 +6,7 @@ public class PalindromeDetector {
     }
 
     private String reverse(String word) {
-        StringBuilder result = new StringBuilder();
-
-        char[] chars = word.toCharArray();
-        for(char c: chars) {
-            result.append(re);
-        }
-        return result.toString();
+        return new StringBuilder(word).reverse().toString();
     }
 }
 
