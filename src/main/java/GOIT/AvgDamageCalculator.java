@@ -11,7 +11,6 @@ public class AvgDamageCalculator {
         }catch (Exception e){
             return 0;
         }
-
     }
 }
 
